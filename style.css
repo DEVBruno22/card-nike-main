@@ -1,0 +1,146 @@
+/* Carregando a fonte roboto para usar no projeto */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800');
+
+/* Realizando reset do nosso CSS */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.div-conteudo{
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+
+.div-conteudo1, .div-conteudo2{
+  height: 800px;
+  width: 650px;
+  padding-right: 50px;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow( 30px 10px 15px rgba( 0, 0 ,0 , 0.5));
+}
+
+.div-conteudo2{
+
+background-image: url("./assets/bg.png");
+background-size: cover;
+align-content: center;
+  
+}
+
+.div-conteudo2 img{
+  
+  height: 400px;
+  
+}
+
+.div-conteudo2 img:hover{
+  
+  height: 450px;
+  transition: 2s;
+  transform: rotate(-10deg);
+}
+
+.div-conteudo1{
+text-align: center;
+align-content: center;
+font-size: 30px;
+font-weight: bold;
+}
+
+.div-conteudo1 button{
+  width: 200px;
+  font-size: 20px;
+  padding: 20px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+h1{
+  filter: drop-shadow( 30px 10px 15px rgba(255, 251, 0, 0.4));
+}
+h2{
+  filter: drop-shadow( 30px 10px 15px rgba(255, 238, 5, 0.4));
+}
+
+button:hover{
+  background-color: rgb(29, 28, 28);
+  transition: 0.5s;
+}
+
+P{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.div-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  text-align: center;
+  padding-top: 50px;
+  gap: 40px;
+  filter: drop-shadow( 30px 10px 15px rgba(15, 15, 10, 0.4));
+}
+
+
+.div-card1, .div-card2, .div-card3, .div-card4{
+  width: 400px;
+  height: 500px;
+  background-image: url("./assets/bg.png");
+  background-position: center; 
+  border-radius: 30px;
+
+
+  
+}
+
+.div-card1 img , .div-card2 img, .div-card3 img, .div-card4 img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  
+  
+   
+}
+
+
+.div-cards-principal{
+display: grid;
+ padding-left: 100px;
+ 
+
+}
+
+button{
+  padding: 10px;
+  width: 100px;
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: rgb(10, 6, 6);
+  color: #f3eded;
+  border-radius: 10px;
+}
+
+
+ .div-card2:hover img, .div-card3:hover img, .div-card4:hover img{
+ height: 220px;
+ cursor: pointer;
+ rotate: calc(10deg);
+ transition: 1s;
+}
+.div-card1:hover img{
+  height: 250px;
+  cursor: pointer;
+  rotate: calc(20deg);
+  transition: 1s;
+}
